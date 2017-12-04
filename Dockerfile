@@ -3,7 +3,7 @@ FROM arm32v6/alpine
 MAINTAINER azcoigreach <azcoigreach@gmail.com>
 
 
-RUN apk add --no-cache ca-certificates curl
+RUN apk add --no-cache ca-certificates curl gnupg
 
 RUN gpg --keyserver pool.sks-keyservers.net --recv-keys 37C84554E7E0A261E4F76E1ED26E6ED000654A3E
 
